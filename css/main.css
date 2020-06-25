@@ -847,6 +847,11 @@ img {
   position: fixed;
   width: 160px; }
 
+.experience__image .slider {
+  max-width: none;
+  width: 559px;
+}
+
 img {
   max-width: 100%; }
 
