@@ -511,7 +511,8 @@ main {
     max-width: 100%;
     min-width: 559px; }
 
-.slider img {
+.slider img,
+.methods__image img {
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none; }
@@ -588,6 +589,10 @@ img {
 
 .callback {
   margin-bottom: 30px; }
+
+.callback__flex-row {
+  justify-content: space-between;
+}
 
 .callback form {
   width: 480px; }
