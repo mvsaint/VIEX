@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     e.preventDefault();
 
-    if (window.innerWidth <= 1366) {
+    if (window.innerWidth <= 1365) {
       $(".rightbar .menu nav a, .rightbar .menu button.next, .rightbar .menu button.back").click(function () {
         $('.rightbar').removeClass('visible');
         $('.hamburger').removeClass('is-active');

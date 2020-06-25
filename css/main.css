@@ -863,7 +863,7 @@ img {
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
   background-color: #c52a85; }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
   main {
     width: 100%;
     overflow: hidden; }
