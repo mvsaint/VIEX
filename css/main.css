@@ -407,7 +407,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 1366px;
+/*  max-width: 1366px;*/
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -426,6 +426,7 @@ main {
 
 .virtual-exhibition {
   background: url(../images/virtual-exhibition.png) no-repeat;
+  background-size: cover;
   margin-right: -25px;
   height: 768px; }
   .virtual-exhibition p {
@@ -471,6 +472,7 @@ main {
     font-weight: 300; }
 
 .title h2 {
+  margin-top: 0;
   font-size: 48px;
   line-height: 72px;
   font-weight: 500;
@@ -559,28 +561,28 @@ main {
       top: 10px; }
   #points button {
     font-family: "Montserrat", sans-serif;
+	color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     background: #000;
-    color: #962b85;
     border: none;
     height: 57px;
     width: 320px;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
-    -webkit-border-image: -webkit-linear-gradient(left, #3a3184, #c62885);
-       -moz-border-image: -moz-linear-gradient(left, #3a3184, #c62885);
-         -o-border-image: -o-linear-gradient(left, #3a3184, #c62885);
-            border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
-            border-image: linear-gradient(to right, #3a3184, #c62885);
-    border-image-slice: 1;
     -webkit-transition: .2s;
     -o-transition: .2s;
     -moz-transition: .2s;
     transition: .2s; }
     #points button:hover {
-      color: #3a3184; }
+	  color: #962b85;
+      border-top: 4px solid transparent;
+	  border-bottom: 4px solid transparent;
+	  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
+	  -webkit-border-image: -webkit-linear-gradient(left, #3a3184, #c62885);
+       -moz-border-image: -moz-linear-gradient(left, #3a3184, #c62885);
+         -o-border-image: -o-linear-gradient(left, #3a3184, #c62885);
+            border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
+	  border-image: linear-gradient(to right, #3a3184, #c62885);
+      border-image-slice: 1; }
 
 img {
   -webkit-box-shadow: 0 9px 27px rgba(0, 0, 0, 0.06);
@@ -627,11 +629,19 @@ img {
     color: #fff;
     width: 240px;
     height: 50px;
+	transition: .2s;
     cursor: pointer; }
     .callback form input[type=submit]:hover {
-      -webkit-box-shadow: 0 9px 27px rgba(0, 0, 0, 0.06);
-         -moz-box-shadow: 0 9px 27px rgba(0, 0, 0, 0.06);
-              box-shadow: 0 9px 27px rgba(0, 0, 0, 0.06); }
+	  color: #962b85;
+      border-top: 4px solid transparent;
+	  border-bottom: 4px solid transparent;
+	  -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
+	  -webkit-border-image: -webkit-linear-gradient(left, #3a3184, #c62885);
+       -moz-border-image: -moz-linear-gradient(left, #3a3184, #c62885);
+         -o-border-image: -o-linear-gradient(left, #3a3184, #c62885);
+            border-image: -webkit-gradient(linear, left top, right top, from(#3a3184), to(#c62885));
+	  border-image: linear-gradient(to right, #3a3184, #c62885);
+      border-image-slice: 1; }
 
 .flex-row .callback__image {
   width: auto;
@@ -802,11 +812,12 @@ img {
     display: -ms-flexbox;
     display: flex; }
   .rightbar .menu button {
+	font-weight: 500;
     width: 50%;
     height: 46px;
     border: none;
     background: none;
-    color: #6a6a6a;
+    color: #8b8585;
     position: relative;
     font-size: 13px;
     display: -webkit-box;
