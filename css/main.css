@@ -448,13 +448,8 @@ section:not(.created) {
 
 .wrapper {
   width: 100%;
-/*  padding: 40px;*/
   padding-left: 40px; }
 
-#points {
-	padding: 40px;
-	padding-right: 0;
-}
 
 .virtual-exhibition__wrapper {
   display: -webkit-box;
@@ -573,6 +568,10 @@ section:not(.created) {
       left: 0;
       top: 10px; }
   #points a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
 	color: #fff;
