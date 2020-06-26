@@ -432,6 +432,7 @@ section:not(.created) {
 
 .virtual-exhibition {
   background: url(../images/virtual-exhibition.png) no-repeat;
+  padding-top: 40px;
   background-size: cover;
   margin-right: -25px;
   height: 768px; }
