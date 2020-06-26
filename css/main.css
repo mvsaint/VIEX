@@ -922,6 +922,7 @@ img {
   .virtual-exhibition {
     margin-right: 0;
     height: 500px;
+    background-position: right center;
     -webkit-background-size: cover;
        -moz-background-size: cover;
             background-size: cover; }
