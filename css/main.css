@@ -415,6 +415,12 @@ main {
   display: -ms-flexbox;
   display: flex; }
 
+section:not(.created) {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
 .rightbar {
   min-width: 160px;
   background-color: #000; }
@@ -440,8 +446,14 @@ main {
             box-shadow: none; }
 
 .wrapper {
-  padding: 40px;
-  padding-right: 0; }
+  width: 100%;
+/*  padding: 40px;*/
+  padding-left: 40px; }
+
+#points {
+	padding: 40px;
+	padding-right: 0;
+}
 
 .virtual-exhibition__wrapper {
   display: -webkit-box;
