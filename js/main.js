@@ -84,9 +84,9 @@ jQuery(function($) {
 
     const section = $('section:not(.created)'),
           nav = $('.menu'),
-          navHeight = nav.outerHeight(); // получаем высоту навигации 
+          navHeight = nav.outerHeight(); // получаем высоту навигации
 
-    // поворот экрана 
+    // поворот экрана
     window.addEventListener('orientationchange', function () {
         navHeight = nav.outerHeight();
     }, false);
@@ -95,7 +95,7 @@ jQuery(function($) {
         const position = $(this).scrollTop();
 
         section.each(function () {
-            const top = $(this).offset().top - navHeight - 5,
+            const top = $(this).offset().top - navHeight,
                   bottom = top + $(this).outerHeight();
 
             if (position >= top && position <= bottom) {
@@ -106,19 +106,19 @@ jQuery(function($) {
                 nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
             }
         });
-		
+
 		if ($(".rightbar .menu nav a.active").next('a').length != 0) {
 		  $('.rightbar .menu button.next').css('visibility', 'visible');
 		} else {
 		  $('.rightbar .menu button.next').css('visibility', 'hidden');
 		}
-		
+
 		if ($(".rightbar .menu nav a.active").prev('a').length != 0) {
 		  $('.rightbar .menu button.back').css('visibility', 'visible');
 		} else {
 		  $('.rightbar .menu button.back').css('visibility', 'hidden');
 		}
-		
+
     });
 
 });
