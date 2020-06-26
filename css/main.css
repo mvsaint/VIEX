@@ -450,6 +450,10 @@ section:not(.created) {
   width: 100%;
   padding-left: 40px; }
 
+.points {
+  padding: 40px 0;
+}
+
 
 .virtual-exhibition__wrapper {
   display: -webkit-box;
