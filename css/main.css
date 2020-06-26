@@ -572,7 +572,8 @@ section:not(.created) {
       position: absolute;
       left: 0;
       top: 10px; }
-  #points button {
+  #points a.button {
+    text-decoration: none;
     font-family: "Montserrat", sans-serif;
 	color: #fff;
     text-transform: uppercase;
@@ -585,7 +586,7 @@ section:not(.created) {
     -o-transition: .2s;
     -moz-transition: .2s;
     transition: .2s; }
-    #points button:hover {
+    #points a.button:hover {
 	  color: #962b85;
       border-top: 4px solid transparent;
 	  border-bottom: 4px solid transparent;
